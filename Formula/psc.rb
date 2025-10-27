@@ -5,21 +5,21 @@
 class Psc < Formula
   desc "lightweight postgres monitor for the terminal"
   homepage ""
-  version "1.1.0"
+  version "1.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/benjaminsanborn/psc/releases/download/v1.1.0/psc_Darwin_x86_64.tar.gz"
-      sha256 "de3bfe43f4e7a26859eece0a4520b1833b7a34e602172ba9765d9f60272fcdb4"
+      url "https://github.com/benjaminsanborn/psc/releases/download/v1.2.0/psc_Darwin_x86_64.tar.gz"
+      sha256 "3b607e67dc7a2e4be22270818b94020f8b5313c048d2730f06c222b17fdcb97b"
 
       def install
         bin.install "psc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/benjaminsanborn/psc/releases/download/v1.1.0/psc_Darwin_arm64.tar.gz"
-      sha256 "97cb5dc4604027b82e95b86c18471d4a0a3a66e727778bea0dd32c38a18c28d8"
+      url "https://github.com/benjaminsanborn/psc/releases/download/v1.2.0/psc_Darwin_arm64.tar.gz"
+      sha256 "518e0476df45205c24cc06608913b3ea5c2ebf70858b54fc8065c9463534531d"
 
       def install
         bin.install "psc"
@@ -29,15 +29,15 @@ class Psc < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benjaminsanborn/psc/releases/download/v1.1.0/psc_Linux_x86_64.tar.gz"
-      sha256 "39737ff6dc83436069a7fc9f43684d1791389f9c343f654c5f90d67bcb7e5e72"
+      url "https://github.com/benjaminsanborn/psc/releases/download/v1.2.0/psc_Linux_x86_64.tar.gz"
+      sha256 "69694554923c79be502b6d55b0a65eb6de396092012bcf9811735ac4f6b15e97"
       def install
         bin.install "psc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/benjaminsanborn/psc/releases/download/v1.1.0/psc_Linux_arm64.tar.gz"
-      sha256 "a178004b0d9afd60df7fc2f6093df78aca3cd3c96cd3e78d1b99417654acc3fb"
+      url "https://github.com/benjaminsanborn/psc/releases/download/v1.2.0/psc_Linux_arm64.tar.gz"
+      sha256 "ff2d5b96a0512a06fa0551593ce94043c9c10df8a1cd43c9028f1aa7e93dcbc8"
       def install
         bin.install "psc"
       end
